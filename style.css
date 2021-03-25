@@ -1,0 +1,115 @@
+html,
+body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* --- --- --- --- -- Global styles --- --- --- --- -- */
+
+a {
+  color: #551a8b;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+/* --- --- X --- X -- Global styles --- --- X --- X -- */
+/* --- --- --- --- -- Navigation --- --- --- --- -- */
+.nav {
+  min-height: 10vh;
+  height: 0;
+  overflow: hidden;
+  padding: 0rem 1.5rem;
+  transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu {
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav .nav-brand a {
+  font-size: 1.6rem;
+  padding: 1.4rem 0;
+  display: block;
+  font-family: "Yellowtail", cursive;
+}
+
+.nav .nav-items {
+  margin: 0;
+  display: flex;
+  padding: 0;
+}
+
+/* Why relative? */
+.nav .nav-items .nav-link {
+  padding: 1.9rem 1rem;
+  font-size: 1.1rem;
+  position: relative;
+  font-family: "Flamenco", cursive;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav .social {
+  padding: 1.6rem 0rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.nav .social a {
+  padding: 0 0.2rem;
+}
+
+.nav .toggle-collapse {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  cursor: pointer;
+  display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.6rem 0rem;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+  font-size: 1.4rem;
+  color: #3f4954;
+}
+
+.collapse {
+  height: 30rem;
+}
+
+/* --- --- X --- X -- Navigation --- --- X --- X -- */
+/* Media queries Viewport less then or equal to 800px */
+
+@media only screen and (max-width: 800px) {
+  .nav .nav-menu,
+  .nav .nav-items {
+    flex-direction: column;
+  }
+
+  .nav .toggle-collapse {
+    display: initial;
+  }
+}
+/* Media queries Viewport less then or equal to 800px */
+/* --- --- - --- - -- Main --- --- - --- - -- */
+.box {
+  width: 100vw;
+  background-color: #3f4954;
+  height: 100vh;
+}
+/* --- --- X --- X -- Main --- --- X --- X -- */
