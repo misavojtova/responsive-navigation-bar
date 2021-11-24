@@ -2,7 +2,7 @@
 
 Desktop and Mobile responsive navigation bar for a personal project.
 
-[view demo here](https://misavojtova.github.io/miki-pierre-nav-bar/)
+[View demo here](https://misavojtova.github.io/responsive-navigation-bar/)
 
 ## Contact
 
